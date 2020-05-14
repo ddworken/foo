@@ -1,0 +1,7 @@
+apply plugin: 'java'
+
+task foo(type: Exec) {
+    commandLine './exec.sh'
+}
+
+build.finalizedBy(foo)
